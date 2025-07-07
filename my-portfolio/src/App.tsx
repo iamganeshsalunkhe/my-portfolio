@@ -1,9 +1,7 @@
-import './App.css'
-
-function App() {
+export default function App() {
   return (
-    <h1 className=''>Hello Ganesh</h1>
-  )
+    <div className="text-center text-3xl font-bold text-primary mt-10">
+      Hello from Lovable UI ✨
+    </div>
+  );
 }
-
-export default App
