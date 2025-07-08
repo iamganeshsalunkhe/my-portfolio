@@ -52,8 +52,8 @@ export const Hero = () => {
 
         <AnimatedSection animation="fade-up" delay={800}>
           <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed">
-            Passionate about creating beautiful, functional web applications
-            that solve real-world problems
+            Passionate about creating functional & beautiful web applications that
+            solve real-world problems
           </p>
         </AnimatedSection>
 

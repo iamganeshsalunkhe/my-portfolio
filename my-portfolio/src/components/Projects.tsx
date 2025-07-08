@@ -37,7 +37,7 @@ export const Projects = () => {
     {
       title: "Hotel Booking Application",
       description:
-        "Built a full-stack Hotel Booking Platform (HBP) from scratch using a monolithic architecture with React for the frontend, Node.js and Express for the backend, and MySQL with sequelize ORM for the database. Included separate dashboards for vendors, and customers, each with role-specific functionalities",
+        "Built a full-stack Hotel Booking Platform (HBP) from scratch using a monolithic architecture with React for the frontend, Node.js and Express for the backend, and MySQL with sequelize ORM for the database. Included separate dashboards for vendors, and customers, each with role-specific functionalities.",
       image:
         "https://images.unsplash.com/photo-1695806109708-f5d5a2da99bb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aG90ZWwlMjBib29raW5nJTIwYXBwbGljYXRpb25zfGVufDB8fDB8fHww",
       technologies: [

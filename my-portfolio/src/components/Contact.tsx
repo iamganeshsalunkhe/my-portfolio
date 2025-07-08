@@ -87,7 +87,7 @@ export const Contact = () => {
                     Email
                   </p>
                   <span className="text-lg font-semibold text-slate-800 group-hover:text-blue-600 transition-colors duration-300 w-11/12 md:w-full">
-                    ganeshsalunkhe1998@gmail.com
+                    iamganeshsalunkhe@gmail.com
                   </span>
                 </div>
               </div>
@@ -195,7 +195,7 @@ export const Contact = () => {
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
-                    className="w-11/12 min-h-[100px] md:min-h-[140px] px-4 py-3 border-2 border-slate-200 rounded-md bg-white/80 backdrop-blur-sm text-sm placeholder:text-slate-400 focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 focus:border-blue-400 transition-all duration-300 disabled:cursor-not-allowed disabled:opacity-50 resize-none hover:bg-white focus:bg-white text-black  "
+                    className="w-11/12 min-h-[100px] md:min-h-[140px] px-4 py-3 border-2 border-slate-200 rounded-md bg-white/80 backdrop-blur-sm text-sm placeholder:text-slate-400 focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 focus:border-blue-400 transition-all duration-300 disabled:cursor-not-allowed disabled:opacity-50 resize-none hover:bg-white focus:bg-white text-black md:w-full "
                     placeholder="Tell me about your project..."
                     required
                   />
