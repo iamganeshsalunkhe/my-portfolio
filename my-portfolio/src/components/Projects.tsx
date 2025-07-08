@@ -15,7 +15,7 @@ export const Projects = () => {
       description:
         "Designed and developed a full-stack web application using a microfrontend architecture for modular frontend experiences, a monolithic backend for centralized business logic, and a single shared database for consistent data management.",
       image:
-        "https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=400&h=250&fit=crop",
+        "https://plus.unsplash.com/premium_photo-1670863088251-500151f2117b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fG1vYmlsZSUyMHNob3BwaW5nJTIwYXBwbGljYXRpb258ZW58MHx8MHx8fDA%3D",
       technologies: [
         "Microservice Architecture",
         "JavaScript",
@@ -26,6 +26,8 @@ export const Projects = () => {
         "Stripe",
         "AWS S3",
         "Tailwind CSS",
+        "DaisyUI",
+        "Tailwind UI",
       ],
       githubUrl:
         "https://github.com/iamganeshsalunkhe/mobile-shopping-application",
@@ -37,7 +39,7 @@ export const Projects = () => {
       description:
         "Built a full-stack Hotel Booking Platform (HBP) from scratch using a monolithic architecture with React for the frontend, Node.js and Express for the backend, and MySQL with sequelize ORM for the database. Included separate dashboards for vendors, and customers, each with role-specific functionalities",
       image:
-        "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=250&fit=crop",
+        "https://images.unsplash.com/photo-1695806109708-f5d5a2da99bb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aG90ZWwlMjBib29raW5nJTIwYXBwbGljYXRpb25zfGVufDB8fDB8fHww",
       technologies: [
         "Monolithic",
         "JavaScript",
@@ -47,7 +49,8 @@ export const Projects = () => {
         "Sequelize",
         "Express.js",
         "JWT",
-        
+        "DaisyUI",
+        "Tailwind UI",
       ],
       githubUrl: "https://github.com/iamganeshsalunkhe/Hotel-Booking-Project",
       liveUrl: "#",

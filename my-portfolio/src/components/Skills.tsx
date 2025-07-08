@@ -9,9 +9,9 @@ export const Skills = () => {
       title: "Frontend",
       icon: Globe,
       skills: [
-        "React.js",
         "JavaScript",
         "TypeScript",
+        "React.js",
         "Next.js",
         "Tailwind CSS",
         "HTML",
@@ -25,6 +25,8 @@ export const Skills = () => {
       title: "Backend",
       icon: Database,
       skills: [
+        "JavaScript",
+        "TypeScript",
         "Node.js",
         "Express.js",
         "MySQL",

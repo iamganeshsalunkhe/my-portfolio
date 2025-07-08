@@ -59,34 +59,40 @@ export const Hero = () => {
 
         <AnimatedSection animation="scale-up" delay={1000}>
           <div className="flex justify-center gap-4 mb-10">
-            <Button
-              variant="outline"
-              size="icon"
-              className="hover:scale-110 hover:shadow-lg transition-all duration-300 border-2 hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400"
+            <a
+              href="https://github.com/iamganeshsalunkhe"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:scale-110 hover:shadow-lg transition-all duration-300 border-2 hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 p-2 rounded"
             >
               <Github className="h-5 w-5" />
-            </Button>
-            <Button
-              variant="outline"
-              size="icon"
-              className="hover:scale-110 hover:shadow-lg transition-all duration-300 border-2 hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400"
+            </a>
+            <a
+              href="https://www.linkedin.com/in/ganeshsalunkhe14/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:scale-110 hover:shadow-lg transition-all duration-300 border-2 hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 p-2 rounded"
             >
               <Linkedin className="h-5 w-5" />
-            </Button>
-            <Button
-              variant="outline"
-              size="icon"
-              className="hover:scale-110 hover:shadow-lg transition-all duration-300 border-2 hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400"
+            </a>
+
+            <a
+              href="mailto:ganeshsalunkhe1998@gnail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:scale-110 hover:shadow-lg transition-all duration-300 border-2 hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 p-2 rounded"
             >
               <Mail className="h-5 w-5" />
-            </Button>
-            <Button
-              variant="outline"
-              size="icon"
-              className="hover:scale-110 hover:shadow-lg transition-all duration-300 border-2 hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400"
+            </a>
+
+            <a
+              href="https://x.com/_iamganesh_"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:scale-110 hover:shadow-lg transition-all duration-300 border-2 hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 p-2 rounded"
             >
               <Twitter className="h-5 w-5" />
-            </Button>
+            </a>
           </div>
         </AnimatedSection>
 

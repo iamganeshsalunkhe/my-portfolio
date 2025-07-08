@@ -35,7 +35,7 @@ export const About = () => {
                 <p className="text-lg text-muted-foreground leading-relaxed font-normal text-gray-500">
                   I’m a dedicated full-stack web developer with a strong
                   foundation in the MERN stack, currently focused on building
-                  scalable, real-world applications from scratch. Whether it’s
+                  scalable, real-world applications. Whether it’s
                   designing intuitive UIs with React and Tailwind or managing
                   data flows using Express and MongoDB/MySQL, I approach every
                   project with curiosity and a commitment to clean, maintainable
