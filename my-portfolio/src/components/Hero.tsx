@@ -27,7 +27,7 @@ export const Hero = () => {
           <div className="mb-8">
             <div className="relative inline-block mt-20">
               <img
-                src="https://images.unsplash.com/photo-1669023414162-8b0573b9c6b2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODZ8fGRldmVsb3BlcnxlbnwwfHwwfHx8MA%3D%3D"
+                src="https://images.unsplash.com/photo-1619251598810-b086ea2c030a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTQ2fHxkZXZlbG9wZXJ8ZW58MHx8MHx8fDA%3D"
                 alt="Profile"
                 className="w-40 h-40 rounded-full mx-auto mb-6 object-cover border-4 border-primary/20 dark:border-primary/30 shadow-2xl hover:scale-105 transition-transform duration-300"
               />
