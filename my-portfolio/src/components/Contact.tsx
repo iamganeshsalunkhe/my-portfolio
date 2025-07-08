@@ -21,7 +21,6 @@ export const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
-    // Here you would typically send the form data to your backend
   };
 
   const handleChange = (
@@ -51,7 +50,7 @@ export const Contact = () => {
 
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-20">
-          <div className="inline-block mb-6">
+          <div className="inline-block mb-6 select-none">
             <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-slate-900 via-blue-800 to-purple-800 bg-clip-text text-transparent leading-tight">
               Get In Touch
             </h2>
@@ -88,7 +87,7 @@ export const Contact = () => {
                     Email
                   </p>
                   <span className="text-lg font-semibold text-slate-800 group-hover:text-blue-600 transition-colors duration-300">
-                    john.smith@email.com
+                    ganeshsalunkhe1998@gmail.com
                   </span>
                 </div>
               </div>
@@ -105,7 +104,7 @@ export const Contact = () => {
                     Phone
                   </p>
                   <span className="text-lg font-semibold text-slate-800 group-hover:text-emerald-600 transition-colors duration-300">
-                    +1 (555) 123-4567
+                    +91 9834610263
                   </span>
                 </div>
               </div>
@@ -122,7 +121,7 @@ export const Contact = () => {
                     Location
                   </p>
                   <span className="text-lg font-semibold text-slate-800 group-hover:text-orange-600 transition-colors duration-300">
-                    San Francisco, CA
+                    Pune/Sangli, Maharashtra, India
                   </span>
                 </div>
               </div>

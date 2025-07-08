@@ -1,5 +1,5 @@
 import { Button } from "../components/ui/button";
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail, Twitter } from "lucide-react";
 
 export const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -8,7 +8,7 @@ export const Hero = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-background to-primary/5 px-4 relative overflow-hidden">
+    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-background to-primary/5 px-4 relative overflow-hidden select-none">
       {/* Background decoration */}
       <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:50px_50px]" />
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-pulse" />
@@ -37,32 +37,46 @@ export const Hero = () => {
         </div>
 
         <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed animate-fade-in delay-500">
-          Passionate about creating functional and beautiful web applications that
-          solve real-world problems
+          Passionate about creating functional and beautiful web applications
+          that solve real-world problems
         </p>
 
         <div className="flex justify-center gap-4 mb-10 animate-fade-in delay-700">
-          <Button
-            variant="outline"
-            size="icon"
-            className="hover:scale-110 hover:shadow-lg transition-all duration-200"
+          <a
+            href="https://github.com/iamganeshsalunkhe"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:scale-110 hover:shadow-lg transition-all duration-200  p-2 outline-1 outline-gray-700"
+            
           >
             <Github className="h-5 w-5" />
-          </Button>
-          <Button
-            variant="outline"
-            size="icon"
-            className="hover:scale-110 hover:shadow-lg transition-all duration-200"
+          </a>
+          <a
+            href="https://www.linkedin.com/in/ganeshsalunkhe14/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:scale-110 hover:shadow-lg transition-all duration-200  p-2 outline-1 outline-gray-700"
           >
             <Linkedin className="h-5 w-5" />
-          </Button>
-          <Button
-            variant="outline"
-            size="icon"
-            className="hover:scale-110 hover:shadow-lg transition-all duration-200"
+          </a>
+
+          <a
+            href="mailto:ganeshsalunkhe1998@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:scale-110 hover:shadow-lg transition-all duration-200  p-2 outline-1 outline-gray-700"
           >
             <Mail className="h-5 w-5" />
-          </Button>
+          </a>
+
+          <a
+            href="https://x.com/_iamganesh_"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:scale-110 hover:shadow-lg transition-all duration-200  p-2 outline-1 outline-gray-700"
+          >
+            <Twitter className="h-5 w-5 " />
+          </a>
         </div>
 
         <div className="flex justify-center gap-6 mb-16 animate-fade-in delay-1000">
@@ -87,7 +101,7 @@ export const Hero = () => {
           variant="link"
           size="icon"
           onClick={() => scrollToSection("about")}
-          className="animate-bounce hover:animate-none hover:scale-110 transition-transform duration-200"
+          className="animate-pulse hover:animate-none hover:scale-110 transition-transform duration-200"
         >
           <ArrowDown className="h-6 w-6" />
         </Button>

@@ -2,7 +2,7 @@ import { Card, CardContent } from "../components/ui/card";
 
 export const About = () => {
   return (
-    <section id="about" className="py-24 px-4 relative overflow-hidden">
+    <section id="about" className="py-24 px-4 relative overflow-hidden ">
       {/* Background decoration */}
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-muted/10 to-transparent" />
 
@@ -27,15 +27,20 @@ export const About = () => {
           <div className="space-y-8">
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground leading-relaxed font-light">
-                I'm a passionate full-stack developer with over 5 years of
-                experience building web applications. I love turning complex
-                problems into simple, beautiful, and intuitive solutions.
+                I’m a dedicated full-stack web developer with a strong
+                foundation in the MERN stack, currently focused on building
+                scalable, real-world applications from scratch. Whether it’s
+                designing intuitive UIs with React and Tailwind or managing data
+                flows using Express and MongoDB/MySQL, I approach every project
+                with curiosity and a commitment to clean, maintainable code.
               </p>
 
               <p className="text-lg text-muted-foreground leading-relaxed font-light">
-                When I'm not coding, you can find me exploring new technologies,
-                contributing to open source projects, or sharing my knowledge
-                through technical writing and mentoring.
+                Outside of development, I’m deeply invested in sharpening my
+                problem-solving skills through daily DSA practice and staying
+                consistent with my personal fitness routine. I believe success
+                is built on discipline, not luck — and I bring that same mindset
+                to every project, challenge, and opportunity in tech.
               </p>
             </div>
 
@@ -46,22 +51,31 @@ export const About = () => {
                 </h3>
                 <ul className="space-y-4 text-muted-foreground">
                   <li className="flex items-center gap-3 hover:text-foreground transition-colors duration-200">
-                    <span className="text-2xl">🎓</span>
+                    <span className="text-2xl">🧠</span>
                     <span className="font-medium">
-                      Computer Science Graduate
+                      Self-Taught Full Stack Developer
                     </span>
                   </li>
                   <li className="flex items-center gap-3 hover:text-foreground transition-colors duration-200">
-                    <span className="text-2xl">💼</span>
-                    <span className="font-medium">5+ Years Experience</span>
+                    <span className="text-2xl">📚</span>
+                    <span className="font-medium">
+                      Always Learning – From Docs, Projects & Mistakes
+                    </span>
                   </li>
                   <li className="flex items-center gap-3 hover:text-foreground transition-colors duration-200">
-                    <span className="text-2xl">🌍</span>
-                    <span className="font-medium">Based in San Francisco</span>
+                    <span className="text-2xl">💡 </span>
+                    <span className="font-medium">
+                      {" "}
+                      Believer in consistency {">"} motivation
+                    </span>
                   </li>
                   <li className="flex items-center gap-3 hover:text-foreground transition-colors duration-200">
                     <span className="text-2xl">☕</span>
                     <span className="font-medium">Coffee Enthusiast</span>
+                  </li>
+                  <li className="flex items-center gap-3 hover:text-foreground transition-colors duration-200">
+                    <span className="text-2xl">🏋️‍♂️</span>
+                    <span className="font-medium">Fitness Freak</span>
                   </li>
                 </ul>
               </CardContent>

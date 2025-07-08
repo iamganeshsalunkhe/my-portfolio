@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/card";
 import { Badge } from "../components/ui/badge";
-import { Code, Database, Globe, Smartphone } from "lucide-react";
+import { Code, Database, Globe, Cpu } from "lucide-react";
 
 export const Skills = () => {
   const skillCategories = [
@@ -8,12 +8,13 @@ export const Skills = () => {
       title: "Frontend",
       icon: Globe,
       skills: [
-        "React",
+        "React.js",
+        "JavaScript",
         "TypeScript",
         "Next.js",
         "Tailwind CSS",
-        "Vue.js",
-        "JavaScript",
+        "HTML",
+        "CSS",
       ],
       gradient: "from-cyan-400/20 via-blue-500/20 to-indigo-600/20",
       iconGradient: "from-cyan-400 to-blue-600",
@@ -24,36 +25,36 @@ export const Skills = () => {
       icon: Database,
       skills: [
         "Node.js",
-        "Python",
-        "PostgreSQL",
+        "Express.js",
+        "MySQL",
+        "Sequelize",
         "MongoDB",
-        "Express",
-        "FastAPI",
+        "Mongoose",
       ],
       gradient: "from-emerald-400/20 via-green-500/20 to-teal-600/20",
       iconGradient: "from-emerald-400 to-green-600",
       borderGradient: "from-emerald-200/30 to-green-300/30",
     },
     {
-      title: "Mobile",
-      icon: Smartphone,
-      skills: ["React Native", "Flutter", "iOS", "Android", "Expo"],
-      gradient: "from-violet-400/20 via-purple-500/20 to-fuchsia-600/20",
-      iconGradient: "from-violet-400 to-purple-600",
-      borderGradient: "from-violet-200/30 to-purple-300/30",
-    },
-    {
       title: "Tools",
       icon: Code,
-      skills: ["Git", "Docker", "AWS", "Firebase", "Vercel", "Figma"],
+      skills: ["Git", "GitHub", "Docker","POSTMAN", "Figma"],
       gradient: "from-amber-400/20 via-orange-500/20 to-red-500/20",
       iconGradient: "from-amber-400 to-orange-600",
       borderGradient: "from-amber-200/30 to-orange-300/30",
     },
+    {
+      title: "Technologies & Methods",
+      icon: Cpu,
+      skills: ["RESTFUL APIs", "Microservices", "MVCS architecture", "Agile"],
+      gradient: "from-violet-400/20 via-purple-500/20 to-fuchsia-600/20",
+      iconGradient: "from-violet-400 to-purple-600",
+      borderGradient: "from-violet-200/30 to-purple-300/30",
+    },
   ];
 
   return (
-    <section className="py-32 px-4 bg-gradient-to-br from-slate-50/50 via-white to-blue-50/30 dark:from-slate-900/50 dark:via-background dark:to-slate-800/30 relative overflow-hidden">
+    <section className="py-32 px-4 bg-gradient-to-br from-slate-50/50 via-white to-blue-50/30 dark:from-slate-900/50 dark:via-background dark:to-slate-800/30 relative overflow-hidden select-none">
       {/* Enhanced background decorations */}
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-gradient-to-br from-blue-400/10 to-purple-600/10 rounded-full blur-3xl animate-pulse" />
       <div
@@ -129,7 +130,7 @@ export const Skills = () => {
                     <Badge
                       key={skill}
                       variant="secondary"
-                      className="px-3 py-1.5 text-sm font-medium bg-slate-100/80 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-500 hover:text-white border-0 shadow-sm hover:shadow-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 cursor-default backdrop-blur-sm"
+                      className="px-3 py-1.5 text-sm font-medium bg-slate-100/80 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-500 hover:text-white border-0 shadow-sm hover:shadow-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 cursor-pointer backdrop-blur-sm "
                       style={{
                         animationDelay: `${index * 150 + skillIndex * 100}ms`,
                       }}

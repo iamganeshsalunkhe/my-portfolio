@@ -5,42 +5,51 @@ import {
   CardHeader,
   CardTitle,
 } from "../components/ui/card";
-import { Button } from "../components/ui/button";
 import { Badge } from "../components/ui/badge";
-import { ExternalLink, Github } from "lucide-react";
+import { Github } from "lucide-react";
 
 export const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
+      title: "Mobile Shopping Application",
       description:
-        "A full-stack e-commerce solution with payment integration, admin dashboard, and real-time inventory management.",
+        "Designed and developed a full-stack web application using a microfrontend architecture for modular frontend experiences, a monolithic backend for centralized business logic, and a single shared database for consistent data management.",
       image:
         "https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=400&h=250&fit=crop",
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe"],
-      githubUrl: "#",
-      liveUrl: "#",
-      featured: true,
-    },
-    {
-      title: "Task Management App",
-      description:
-        "A collaborative project management tool with real-time updates, team collaboration, and advanced filtering.",
-      image:
-        "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=250&fit=crop",
-      technologies: ["Next.js", "TypeScript", "Prisma", "WebSocket"],
-      githubUrl: "#",
+      technologies: [
+        "Microservice Architecture",
+        "JavaScript",
+        "React.js",
+        "Node.js",
+        "MySQL",
+        "Sequelize",
+        "Stripe",
+        "AWS S3",
+        "Tailwind CSS",
+      ],
+      githubUrl:
+        "https://github.com/iamganeshsalunkhe/mobile-shopping-application",
       liveUrl: "#",
       featured: false,
     },
     {
-      title: "Weather Dashboard",
+      title: "Hotel Booking Application",
       description:
-        "A responsive weather application with location-based forecasts, interactive maps, and weather alerts.",
+        "Built a full-stack Hotel Booking Platform (HBP) from scratch using a monolithic architecture with React for the frontend, Node.js and Express for the backend, and MySQL with sequelize ORM for the database. Included separate dashboards for vendors, and customers, each with role-specific functionalities",
       image:
-        "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=250&fit=crop",
-      technologies: ["Vue.js", "Python", "FastAPI", "OpenWeather API"],
-      githubUrl: "#",
+        "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=250&fit=crop",
+      technologies: [
+        "Monolithic",
+        "JavaScript",
+        "React.js",
+        "Node.js",
+        "MySQL",
+        "Sequelize",
+        "Express.js",
+        "JWT",
+        
+      ],
+      githubUrl: "https://github.com/iamganeshsalunkhe/Hotel-Booking-Project",
       liveUrl: "#",
       featured: false,
     },
@@ -66,7 +75,7 @@ export const Projects = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-2  gap-8">
           {projects.map((project) => (
             <Card
               key={project.title}
@@ -80,11 +89,7 @@ export const Projects = () => {
                   alt={project.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
-                {project.featured && (
-                  <div className="absolute top-3 right-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-3 py-1 rounded-full text-sm font-medium shadow-lg">
-                    Featured
-                  </div>
-                )}
+
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
 
@@ -110,22 +115,16 @@ export const Projects = () => {
                   ))}
                 </div>
 
-                <div className="flex gap-3 pt-2">
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className="flex-1 border-slate-300 text-slate-700 hover:bg-slate-50 hover:border-slate-400 transition-colors duration-200"
+                <div className="flex gap-3 pt-2 select-none">
+                  <a
+                    href={project.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full flex items-center justify-center gap-2 px-5 py-3 rounded-lg bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white font-medium text-sm shadow-md hover:shadow-xl transition-all duration-300"
                   >
-                    <Github className="h-4 w-4 mr-2" />
-                    Code
-                  </Button>
-                  <Button
-                    size="sm"
-                    className="flex-1 bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white shadow-md hover:shadow-lg transition-all duration-200"
-                  >
-                    <ExternalLink className="h-4 w-4 mr-2" />
-                    Live Demo
-                  </Button>
+                    <Github className="h-5 w-5" />
+                    GitHub Repo
+                  </a>
                 </div>
               </CardContent>
             </Card>
