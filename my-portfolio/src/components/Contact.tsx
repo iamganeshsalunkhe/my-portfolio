@@ -78,7 +78,7 @@ export const Contact = () => {
               <div className="group flex items-center gap-6 p-6 rounded-2xl bg-white/60 backdrop-blur-sm border border-slate-200/60 hover:bg-white/80 hover:border-blue-200/60 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                 <div className="relative">
                   <div className="absolute inset-0 bg-gradient-to-r from-blue-400/20 to-purple-400/20 rounded-full blur-lg scale-150 opacity-0 group-hover:opacity-100 transition-all duration-300" />
-                  <div className="relative p-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
+                  <div className="relative p-2 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
                     <Mail className="h-6 w-6 text-white" />
                   </div>
                 </div>
@@ -86,7 +86,7 @@ export const Contact = () => {
                   <p className="text-sm font-medium text-slate-500 mb-1">
                     Email
                   </p>
-                  <span className="text-lg font-semibold text-slate-800 group-hover:text-blue-600 transition-colors duration-300">
+                  <span className="text-lg font-semibold text-slate-800 group-hover:text-blue-600 transition-colors duration-300 w-11/12 md:w-full">
                     ganeshsalunkhe1998@gmail.com
                   </span>
                 </div>
@@ -95,7 +95,7 @@ export const Contact = () => {
               <div className="group flex items-center gap-6 p-6 rounded-2xl bg-white/60 backdrop-blur-sm border border-slate-200/60 hover:bg-white/80 hover:border-emerald-200/60 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                 <div className="relative">
                   <div className="absolute inset-0 bg-gradient-to-r from-emerald-400/20 to-cyan-400/20 rounded-full blur-lg scale-150 opacity-0 group-hover:opacity-100 transition-all duration-300" />
-                  <div className="relative p-4 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-2xl shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
+                  <div className="relative p-2 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-2xl shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
                     <Phone className="h-6 w-6 text-white" />
                   </div>
                 </div>
@@ -112,15 +112,15 @@ export const Contact = () => {
               <div className="group flex items-center gap-6 p-6 rounded-2xl bg-white/60 backdrop-blur-sm border border-slate-200/60 hover:bg-white/80 hover:border-orange-200/60 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                 <div className="relative">
                   <div className="absolute inset-0 bg-gradient-to-r from-orange-400/20 to-pink-400/20 rounded-full blur-lg scale-150 opacity-0 group-hover:opacity-100 transition-all duration-300" />
-                  <div className="relative p-4 bg-gradient-to-r from-orange-500 to-pink-500 rounded-2xl shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
+                  <div className="relative p-2 bg-gradient-to-r from-orange-500 to-pink-500 rounded-2xl shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
                     <MapPin className="h-6 w-6 text-white" />
                   </div>
                 </div>
-                <div>
+                <div className="">
                   <p className="text-sm font-medium text-slate-500 mb-1">
                     Location
                   </p>
-                  <span className="text-lg font-semibold text-slate-800 group-hover:text-orange-600 transition-colors duration-300">
+                  <span className="text-lg font-semibold text-slate-800 group-hover:text-orange-600 transition-colors duration-300 w-11/12 md:w-full">
                     Pune/Sangli, Maharashtra, India
                   </span>
                 </div>
@@ -144,7 +144,7 @@ export const Contact = () => {
               </CardDescription>
             </CardHeader>
 
-            <CardContent className="relative z-10">
+            <CardContent className="relative z-10 select-none">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="space-y-2">
                   <Label
@@ -158,7 +158,7 @@ export const Contact = () => {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    className="h-12 border-2 border-slate-200 focus:border-blue-400 transition-all duration-300 bg-white/80 backdrop-blur-sm hover:bg-white focus:bg-white"
+                    className="h-12 border-2 border-slate-200 focus:border-blue-400 transition-all duration-300 bg-white/80 backdrop-blur-sm hover:bg-white focus:bg-white text-black w-11/12 md:w-full"
                     placeholder="Your name"
                     required
                   />
@@ -177,13 +177,13 @@ export const Contact = () => {
                     type="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="h-12 border-2 border-slate-200 focus:border-blue-400 transition-all duration-300 bg-white/80 backdrop-blur-sm hover:bg-white focus:bg-white"
+                    className="h-12 border-2 border-slate-200 focus:border-blue-400 transition-all duration-300 bg-white/80 backdrop-blur-sm hover:bg-white focus:bg-white text-black w-11/12 md:w-full"
                     placeholder="your.email@example.com"
                     required
                   />
                 </div>
 
-                <div className="space-y-2">
+                <div className="space-y-2 w-full">
                   <Label
                     htmlFor="message"
                     className="text-sm font-semibold text-slate-700"
@@ -195,7 +195,7 @@ export const Contact = () => {
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
-                    className="w-full min-h-[140px] px-4 py-3 border-2 border-slate-200 rounded-md bg-white/80 backdrop-blur-sm text-sm ring-offset-background placeholder:text-slate-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 focus:border-blue-400 transition-all duration-300 disabled:cursor-not-allowed disabled:opacity-50 resize-none hover:bg-white focus:bg-white"
+                    className="w-11/12 min-h-[100px] md:min-h-[140px] px-4 py-3 border-2 border-slate-200 rounded-md bg-white/80 backdrop-blur-sm text-sm placeholder:text-slate-400 focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 focus:border-blue-400 transition-all duration-300 disabled:cursor-not-allowed disabled:opacity-50 resize-none hover:bg-white focus:bg-white text-black  "
                     placeholder="Tell me about your project..."
                     required
                   />
@@ -203,7 +203,7 @@ export const Contact = () => {
 
                 <Button
                   type="submit"
-                  className="w-full h-12 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 hover:from-blue-600 hover:via-purple-600 hover:to-pink-600 text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-base font-semibold relative overflow-hidden group"
+                  className=" md:w-full h-12 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 hover:from-blue-600 hover:via-purple-600 hover:to-pink-600 text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-base font-semibold relative overflow-hidden group"
                 >
                   <span className="relative z-10">Send Message</span>
                   <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
