@@ -77,7 +77,7 @@ export const Hero = () => {
             </a>
 
             <a
-              href="mailto:ganeshsalunkhe1998@gnail.com"
+              href="mailto:iamganeshsalunkhe@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:scale-110 hover:shadow-lg transition-all duration-300 border-2 hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 p-2 rounded"
