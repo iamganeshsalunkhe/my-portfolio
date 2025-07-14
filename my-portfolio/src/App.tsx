@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import { Analytics } from "@vercel/analytics/react";
 const queryClient = new QueryClient();
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
@@ -16,6 +17,7 @@ const App = () => (
         <Toaster />
         <Sonner />
         <Analytics/>
+        <SpeedInsights/>
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />
