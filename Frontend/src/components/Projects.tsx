@@ -4,8 +4,8 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from "../components/ui/card";
-import { Badge } from "../components/ui/badge";
+} from "./ui/card";
+import { Badge } from "./ui/badge";
 import { Github } from "lucide-react";
 
 export const Projects = () => {
@@ -25,9 +25,9 @@ export const Projects = () => {
         "Sequelize",
         "Stripe",
         "AWS S3",
+        "Zustand",
         "Tailwind CSS",
         "DaisyUI",
-        "Tailwind UI",
       ],
       githubUrl:
         "https://github.com/iamganeshsalunkhe/mobile-shopping-application",
@@ -49,6 +49,7 @@ export const Projects = () => {
         "Sequelize",
         "Express.js",
         "JWT",
+        "Context API",
         "DaisyUI",
         "Tailwind UI",
       ],
