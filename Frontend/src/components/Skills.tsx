@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/card";
 import { Badge } from "../components/ui/badge";
-import { Code, Database, Globe, Cpu } from "lucide-react";
+import { Code, Database, Globe, Cpu ,Server,Cloud} from "lucide-react";
 import { AnimatedSection } from "./AnimatedSection";
 
 export const Skills = () => {
@@ -23,36 +23,43 @@ export const Skills = () => {
     },
     {
       title: "Backend",
-      icon: Database,
-      skills: [
-        "JavaScript",
-        "TypeScript",
-        "Node.js",
-        "Express.js",
-        "MySQL",
-        "Sequelize",
-        "MongoDB",
-        "Mongoose",
-      ],
+      icon: Server,
+      skills: ["Node.js", "Express.js", "REST API's", "Microservices"],
       gradient: "from-emerald-400/20 via-green-500/20 to-teal-600/20",
       iconGradient: "from-emerald-400 to-green-600",
       borderGradient: "from-emerald-200/30 to-green-300/30",
     },
     {
-      title: "Tools",
+      title: "Database",
+      icon: Database,
+      skills: ["MySQL", "MongoDB", "Sequelize", "Mongoose"],
+      gradient: "from-cyan-400/20 via-blue-500/20 to-indigo-600/20",
+      iconGradient: "from-cyan-400 to-blue-600",
+      borderGradient: "from-cyan-200/30 to-blue-300/30",
+    },
+    {
+      title: "Dev Tools",
       icon: Code,
-      skills: ["Git", "GitHub", "Docker","POSTMAN", "Figma"],
+      skills: ["Git", "GitHub", "Docker", "Postman", "Figma"],
       gradient: "from-amber-400/20 via-orange-500/20 to-red-500/20",
       iconGradient: "from-amber-400 to-orange-600",
       borderGradient: "from-amber-200/30 to-orange-300/30",
     },
     {
-      title: "Technologies & Methods",
+      title: "Development Practices",
       icon: Cpu,
-      skills: ["RESTFUL APIs", "Microservices", "MVCS architecture", "Agile"],
+      skills: ["MVCS Architecture", "Agile Methodology", "CI/CD"],
       gradient: "from-violet-400/20 via-purple-500/20 to-fuchsia-600/20",
       iconGradient: "from-violet-400 to-purple-600",
       borderGradient: "from-violet-200/30 to-purple-300/30",
+    },
+    {
+      title: "Cloud & Integrations",
+      icon: Cloud, 
+      skills: ["AWS S3", "Razorpay"],
+      gradient: "from-sky-400/20 via-blue-500/20 to-indigo-600/20",
+      iconGradient: "from-sky-400 to-blue-600",
+      borderGradient: "from-sky-200/30 to-blue-300/30",
     },
   ];
 
@@ -86,7 +93,7 @@ export const Skills = () => {
           </div>
         </AnimatedSection>
 
-        <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2  xl:grid-cols-3 gap-8">
           {skillCategories.map((category, index) => (
             <AnimatedSection
               key={category.title}

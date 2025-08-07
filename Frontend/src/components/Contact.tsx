@@ -10,24 +10,49 @@ import { Input } from "../components/ui/input";
 import { Label } from "../components/ui/label";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { useState } from "react";
+import toast from "react-hot-toast";
 
 export const Contact = () => {
-  const [formData, setFormData] = useState({
+  const [Data, setData] = useState({
     name: "",
     email: "",
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log("Form submitted:", formData);
+  const handleSubmit = async (data: {
+    name: string;
+    email: string;
+    message: string;
+  }) => {
+    
+    try {
+      const res = await fetch("http://localhost:5000/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      const result = await res.json();
+      if (res.ok) {
+        toast.success("Message sent!");
+        setData({name:"",email:"",message:""
+        })
+      } else {
+        toast.error(result.error || "Something went wrong!");
+      }
+    } catch(error) {
+      console.error(error);
+      toast.error("Server error!");
+    }
   };
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
-    setFormData({
-      ...formData,
+    setData({
+      ...Data,
       [e.target.name]: e.target.value,
     });
   };
@@ -145,7 +170,10 @@ export const Contact = () => {
             </CardHeader>
 
             <CardContent className="relative z-10 select-none">
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form onSubmit={(e)=>{
+                e.preventDefault();
+                handleSubmit(Data)
+              }} className="space-y-6">
                 <div className="space-y-2">
                   <Label
                     htmlFor="name"
@@ -156,7 +184,7 @@ export const Contact = () => {
                   <Input
                     id="name"
                     name="name"
-                    value={formData.name}
+                    value={Data.name}
                     onChange={handleChange}
                     className="h-12 border-2 border-slate-200 focus:border-blue-400 transition-all duration-300 bg-white/80 backdrop-blur-sm hover:bg-white focus:bg-white text-black w-11/12 md:w-full"
                     placeholder="Your name"
@@ -175,7 +203,7 @@ export const Contact = () => {
                     id="email"
                     name="email"
                     type="email"
-                    value={formData.email}
+                    value={Data.email}
                     onChange={handleChange}
                     className="h-12 border-2 border-slate-200 focus:border-blue-400 transition-all duration-300 bg-white/80 backdrop-blur-sm hover:bg-white focus:bg-white text-black w-11/12 md:w-full"
                     placeholder="your.email@example.com"
@@ -193,7 +221,7 @@ export const Contact = () => {
                   <textarea
                     id="message"
                     name="message"
-                    value={formData.message}
+                    value={Data.message}
                     onChange={handleChange}
                     className="w-11/12 min-h-[100px] md:min-h-[140px] px-4 py-3 border-2 border-slate-200 rounded-md bg-white/80 backdrop-blur-sm text-sm placeholder:text-slate-400 focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 focus:border-blue-400 transition-all duration-300 disabled:cursor-not-allowed disabled:opacity-50 resize-none hover:bg-white focus:bg-white text-black md:w-full "
                     placeholder="Tell me about your project..."
