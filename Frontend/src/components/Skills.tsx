@@ -1,13 +1,20 @@
 import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/card";
 import { Badge } from "../components/ui/badge";
-import { Code, Database, Globe, Cpu ,Server,Cloud} from "lucide-react";
+import {
+  Code,
+  Database,
+  LaptopMinimal,
+  Cpu,
+  Server,
+  Cloud,
+} from "lucide-react";
 import { AnimatedSection } from "./AnimatedSection";
 
 export const Skills = () => {
   const skillCategories = [
     {
       title: "Frontend",
-      icon: Globe,
+      icon: LaptopMinimal,
       skills: [
         "JavaScript",
         "TypeScript",
@@ -38,12 +45,12 @@ export const Skills = () => {
       borderGradient: "from-cyan-200/30 to-blue-300/30",
     },
     {
-      title: "Dev Tools",
-      icon: Code,
-      skills: ["Git", "GitHub", "Docker", "Postman", "Figma"],
-      gradient: "from-amber-400/20 via-orange-500/20 to-red-500/20",
-      iconGradient: "from-amber-400 to-orange-600",
-      borderGradient: "from-amber-200/30 to-orange-300/30",
+      title: "Cloud & Integrations",
+      icon: Cloud,
+      skills: ["AWS S3", "Razorpay"],
+      gradient: "from-sky-400/20 via-blue-500/20 to-indigo-600/20",
+      iconGradient: "from-sky-400 to-blue-600",
+      borderGradient: "from-sky-200/30 to-blue-300/30",
     },
     {
       title: "Development Practices",
@@ -54,12 +61,12 @@ export const Skills = () => {
       borderGradient: "from-violet-200/30 to-purple-300/30",
     },
     {
-      title: "Cloud & Integrations",
-      icon: Cloud, 
-      skills: ["AWS S3", "Razorpay"],
-      gradient: "from-sky-400/20 via-blue-500/20 to-indigo-600/20",
-      iconGradient: "from-sky-400 to-blue-600",
-      borderGradient: "from-sky-200/30 to-blue-300/30",
+      title: "Dev Tools",
+      icon: Code,
+      skills: ["Git", "GitHub", "Docker", "Postman"],
+      gradient: "from-amber-400/20 via-orange-500/20 to-red-500/20",
+      iconGradient: "from-amber-400 to-orange-600",
+      borderGradient: "from-amber-200/30 to-orange-300/30",
     },
   ];
 
@@ -93,7 +100,7 @@ export const Skills = () => {
           </div>
         </AnimatedSection>
 
-        <div className="grid grid-cols-2  xl:grid-cols-3 gap-8">
+        <div className="grid   xl:grid-cols-3 gap-8">
           {skillCategories.map((category, index) => (
             <AnimatedSection
               key={category.title}

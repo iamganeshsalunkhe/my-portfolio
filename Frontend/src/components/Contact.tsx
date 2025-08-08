@@ -100,7 +100,7 @@ export const Contact = () => {
             </div>
 
             <div className="space-y-6">
-              <div className="group flex items-center gap-6 p-6 rounded-2xl bg-white/60 backdrop-blur-sm border border-slate-200/60 hover:bg-white/80 hover:border-blue-200/60 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+              <div className="group flex items-center gap-2 p-3 rounded-2xl bg-white/60 backdrop-blur-sm border border-slate-200/60 hover:bg-white/80 hover:border-blue-200/60 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                 <div className="relative">
                   <div className="absolute inset-0 bg-gradient-to-r from-blue-400/20 to-purple-400/20 rounded-full blur-lg scale-150 opacity-0 group-hover:opacity-100 transition-all duration-300" />
                   <div className="relative p-2 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
@@ -117,7 +117,7 @@ export const Contact = () => {
                 </div>
               </div>
 
-              <div className="group flex items-center gap-6 p-6 rounded-2xl bg-white/60 backdrop-blur-sm border border-slate-200/60 hover:bg-white/80 hover:border-emerald-200/60 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+              <div className="group flex items-center gap-2 p-3 rounded-2xl bg-white/60 backdrop-blur-sm border border-slate-200/60 hover:bg-white/80 hover:border-emerald-200/60 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                 <div className="relative">
                   <div className="absolute inset-0 bg-gradient-to-r from-emerald-400/20 to-cyan-400/20 rounded-full blur-lg scale-150 opacity-0 group-hover:opacity-100 transition-all duration-300" />
                   <div className="relative p-2 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-2xl shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
@@ -134,7 +134,7 @@ export const Contact = () => {
                 </div>
               </div>
 
-              <div className="group flex items-center gap-6 p-6 rounded-2xl bg-white/60 backdrop-blur-sm border border-slate-200/60 hover:bg-white/80 hover:border-orange-200/60 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+              <div className="group flex items-center gap-2 p-3 rounded-2xl bg-white/60 backdrop-blur-sm border border-slate-200/60 hover:bg-white/80 hover:border-orange-200/60 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                 <div className="relative">
                   <div className="absolute inset-0 bg-gradient-to-r from-orange-400/20 to-pink-400/20 rounded-full blur-lg scale-150 opacity-0 group-hover:opacity-100 transition-all duration-300" />
                   <div className="relative p-2 bg-gradient-to-r from-orange-500 to-pink-500 rounded-2xl shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
